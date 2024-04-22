@@ -15,7 +15,6 @@ from requests.auth import HTTPBasicAuth
 import threading
 import traceback
 import sys
-from flaskwebgui import FlaskUI
 
 requests.packages.urllib3.disable_warnings(
     requests.packages.urllib3.exceptions.InsecureRequestWarning)
@@ -26,7 +25,7 @@ app = Flask(__name__,
             static_url_path='',
             static_folder='public',)
 
-ui = FlaskUI(app) 
+
 
 class TreeNode:
     def __init__(self, name, id, url, is_dead):
@@ -266,5 +265,5 @@ def root():
     return app.send_static_file('adminpage.html') 
 
 if __name__ == '__main__':
-    #app.run(debug=True)
-    FlaskUI(app=app, server="flask", width=800, height=600).run()
+    app.run(debug=True)
+    
