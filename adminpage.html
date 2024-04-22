@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Harton Heroes</title>
+
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="topnav">
+    <a class="active" href="#home" onclick="loadHome()">Home</a>
+    <a href="#Locations" onclick="loadLocs(1361244)">Locations</a>
+    <a href="#Quests" onclick="loadQuests()">Quests</a>
+    <!--<a href="#about">Organisations</a>-->
+  </div>
+</head>
+    <div id="adminpage">
+      <h1 hidden class="LocHeader" id="contentheader">Locations</h1>
+      <br><br>
+        
+    <button hidden class="getlocsbutton" id="getlocs"  onclick="loadLocs(1361244)">Return to top Location</button> 
+    <!-- <button id="getlead" data-name="test" onclick="loadLeads(/*this.getAttribute('data-name')*/)">Show Characters</button> -->
+    <br><br><br>
+      <table hidden class="locstable" border="2" align="center">
+          <col width="100">
+          <col width="100">
+          <col width="200">
+          <col width="130">
+          <col width="200">
+
+      <thead>
+        <th>Name</th>
+        <th>Location ID</th>
+        <th>Parent Location ID</th>
+        <th>URL</th>
+        <th>Action</th>
+      </thead>
+      <tbody id="tdata">
+      </tbody>
+      </table>
+      <br>
+      
+      <h1 hidden class="CharHeader" id="contentheader">Characters</h1>
+        <br><br>
+      
+      <!-- <button id="getlead" data-name="test" onclick="loadLeads(/*this.getAttribute('data-name')*/)">Show Characters</button> -->
+      <br><br><br>
+        <table hidden class="charstable" border="2" align="center">
+            <col width="100">
+            <col width="100">
+            <col width="200">
+            <col width="130">
+            <col width="350">
+          
+  
+        <thead>
+          <th>Name</th>
+          <th>Location</th>
+          <th>Parent Location</th>
+          <th>URL</th>
+          <th>Is Dead</th>
+          
+        </thead>
+        <tbody id="tdata">
+        </tbody>
+        </table>
+        <br>
+        
+        <h1 hidden class="QuestHeader" id="contentheader">Quests</h1>
+        <br><br>
+      
+      <!-- <button id="getlead" data-name="test" onclick="loadLeads(/*this.getAttribute('data-name')*/)">Show Characters</button> -->
+      <br><br><br>
+        <table hidden class="queststable" border="2" align="center">
+            <col width="100">
+            <col width="100">
+            <col width="200">
+            
+  
+        <thead>
+          <th>Name</th>
+          <th>URL</th>
+          <th>Is Completed</th>
+        </thead>
+        <tbody id="tdata">
+        </tbody>
+        </table>
+        <br>
+        
+        <h1 hidden class="ItemHeader" id="contentheader">Items</h1>
+        <br><br>
+    
+      <!-- <button id="getlead" data-name="test" onclick="loadLeads(/*this.getAttribute('data-name')*/)">Show Characters</button> -->
+      <br><br><br>
+        <table hidden class="itemstable" border="2" align="center">
+            <col width="100">
+            <col width="100">
+            <col width="200">
+            <col width="130">
+            <col width="150">
+            <col width="350">
+            <col width="200">
+  
+        <thead>
+          <th>Name</th>
+          <th>Location</th>
+          <th>Parent Location</th>
+          <th>URL</th>
+          <th>Sex</th>
+          <th>Is Dead</th>
+          <th>Action</th>
+        </thead>
+        <tbody id="tdata">
+        </tbody>
+        </table>
+        <br>
+        
+    </div>
+<!--<div class="footer">
+<ul class="footercontent1">
+    <li><h3>Placeholder</h3></li>
+    <li><a href="#" data-target="home.html">Home</a></li>
+</ul>
+</div>-->
+
+</body>
+</html>
